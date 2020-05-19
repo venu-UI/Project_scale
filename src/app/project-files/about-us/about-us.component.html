@@ -1,0 +1,27 @@
+<app-menubar></app-menubar>
+<div class="container-fluid aboutmecont">
+<div class="jumbotron contents" *ngFor="let data of aboutmes">
+  <h1>{{ data.name}}</h1>
+  <h3>{{ data.designation}}</h3>
+  <h4>{{data.experience}}</h4>		
+  <div class="technical">
+  <ul class="breadcrumb">
+  <li><a href="#">{{ data.first }}</a></li>
+  <li><a href="#">{{ data.second }}</a></li>
+  <li><a href="#">{{ data.three }}</a></li>
+ </ul>
+  </div>
+  <h4 class="domain">{{ data.domain}} </h4>
+  <div class="biography">
+  <h5>{{ data.biography }}</h5>
+  <textarea *ngIf="data.canEditCode" [(ngModel)]="data.biography" type="text" class="form-control"></textarea>
+  <span (click)="data.canEditCode = true">edit</span> 
+  <span  (click)="data.canEditCode = false">save</span> 
+
+   <!-- 	<label><input type="radio" (click)="data.canEditCode = true" value=""></label>
+  	<label><input type="radio" (click)="data.canEditCode = false" value=""></label> -->
+</div>
+</div>
+<hr>
+</div>
+

@@ -1,0 +1,18 @@
+.reuseservice{
+	background: #87a3a3;
+	height: auto;
+	position: relative;
+	display: inline-flex;
+	overflow-y: auto;
+	margin: 10px;
+    padding: 15px;
+    margin-left: 157px;
+}
+.reuse-wrap{
+	width:50%;
+	height: auto;
+	background-color: #a2abab;
+	border-radius: 5px solid #2b3b3b;
+	margin: 10px;
+
+}

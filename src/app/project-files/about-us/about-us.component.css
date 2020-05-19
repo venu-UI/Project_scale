@@ -1,0 +1,61 @@
+.aboutmecont{
+    width: 75%;
+    height: auto;
+    background: #c7fff02b;
+    border: 2px solid #0c614a26;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+    overflow-y: auto;
+}
+.jumbotron{
+	background: transparent;
+}
+.breadcrumb{
+	background-color: transparent;
+}
+.technical{
+	background-color: #034735;
+}
+.technical ul li a{
+	font-size: 20px;
+	color: #fafffe!important;
+	font-family: monospace!important;
+	text-decoration: none!important;
+}
+
+ .contents h2 h3 h4 h5{
+	font-size: 19px;
+	color: #01241d!important;
+	font-family: monospace!important;
+	font-weight: bold!important;
+	text-align: justify!important;
+
+}
+.biography h5{
+	font-family: monospace!important;
+	font-size: 18px;
+	color: #002e25!important;
+	text-align: justify;
+	font-weight: bold;
+
+}
+.biography span{
+	margin: 5px;
+	color: #002e25;
+	font-family: monospace;
+	font-size: 16px;
+	font-weight: bold;
+	background: #0a8069!important;
+	padding: 8px;
+	border-radius: 4px;
+}
+
+.domain{
+	font-size: 20px;
+	font-family: monospace;
+	font-weight: bold;
+	color:#3d5e58;
+	text-transform: capitalize;
+}

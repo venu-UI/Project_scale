@@ -1,0 +1,46 @@
+<app-menubar></app-menubar>
+<!-- <div class="col-md-6">
+<div class="jumbotron">
+	<h1> welcome to {{ parentData }}</h1>
+  <div *ngIf="element.type === 'server'" style="color: red"><h4>{{element.name}}</h4></div>
+  <div *ngIf="element.type === 'newlook'" style="color: blue"><h3>{{element.name}}</h3></div>
+  <div><p>{{element.content}}</p></div>
+</div>
+</div> -->
+<div class="col-md-3">
+<div class="jumbotron re-usecont">
+	<h4>Add new Items</h4>
+	<label>Title</label>
+	<input type="text" class="form-control" [(ngModel)]="newtitle">
+	<label>Name</label>
+	<input type="text" class="form-control" [(ngModel)]="newfirstname">
+	<label>Designation</label>
+	<input type="text" class="form-control"  [(ngModel)]="newdesignation">
+	<label>Experience</label>
+	<input type="text" class="form-control"  [(ngModel)]="newexperience">
+	<label>Domain</label>
+	<input type="text" class="form-control" [(ngModel)]="newdomain">
+	<button class="btn btn-primary" (click)="onAddlist()">Add</button>
+</div>
+</div>
+<div class="col-md-6 reuseservice" >
+<!-- 	<h1> welcome to {{ parentData }}</h1>
+ -->	<div class="jumbotron reuse-wrap" *ngFor="let reusedata of employees">
+ 		<div *ngIf="reusedata.title === 'fresher'" style="color: red; background-color: white!important"><h2>{{reusedata.title}}</h2></div>
+ <div *ngIf="reusedata.title === 'experienced'" style="color: white;  background-color: #008726!important"><h2>{{reusedata.title}}</h2></div>
+		<h4>Name:<span>{{reusedata.name}}</span></h4>
+		<h4>Designation:<span>{{reusedata.designation}}</span></h4>
+		<h4 *ngIf="reusedata.title === 'fresher'" style="display: none">
+		Experience:<span>{{reusedata.experience}}</span></h4>
+		<h4 *ngIf="reusedata.title === 'experienced'" style="display: block;">
+		Experience:<span>{{reusedata.experience}}</span></h4>
+		<h4>Domain:<span>{{reusedata.domain}}</span></h4>
+	</div>
+	
+
+<iframe src="https://player.vimeo.com/video/76979871" width="640" height="360" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+	
+</div>
+<!-- <div class="jumbotron contents" *ngFor="let data of employees">
+<h1>{{ data.name }}</h1>
+</div> -->

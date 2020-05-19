@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project-Scale';
+   elementfirst = [{type: 'server', name: 'venugopal', content:'welcome to Tales'}];
 }
